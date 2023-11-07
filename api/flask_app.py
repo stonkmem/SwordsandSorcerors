@@ -14,7 +14,7 @@ def roll(n, d, mod):
 
 @app.route("/")
 def home():
-    return render_template("sitehome_b.html", swordsnsorcerors = url_for("sns"))
+    return render_template("index.html", swordsnsorcerors = url_for("sns"))
 
 @app.route("/appsns", methods=["POST", "GET"])
 def sns():
